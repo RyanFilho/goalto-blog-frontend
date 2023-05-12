@@ -4,9 +4,7 @@ import { IPost } from "../../../entities/IPost";
 import { Input } from "../../Atoms/Input";
 import { Snackbar } from "../../Atoms/Snackbar";
 
-interface PostFormProps {}
-
-export const PostForm: React.FC<PostFormProps> = () => {
+export function PostForm () {
   const [showSnackbar, setShowSnackbar] = useState(false);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");

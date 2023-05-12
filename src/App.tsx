@@ -1,4 +1,4 @@
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider, Navigate } from 'react-router-dom';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import { HomePage } from './components/Pages/HomePage';
 import LoadDataMock from './data-mock'
 import { PostPage } from './components/Pages/PostPage';
