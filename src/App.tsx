@@ -1,15 +1,24 @@
-import { Content } from './components/Atoms/Content';
-import { Title } from './components/Atoms/Title';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider, Navigate } from 'react-router-dom';
+import { HomePage } from './components/Pages/HomePage';
+import LoadDataMock from './data-mock'
+
+LoadDataMock();
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/lab" element={<HomePage />} />
+    </Route>
+  )
+)
 
 function App() {
   return (
     <>
-      <Title title="Testando o titulo" />
-      <div className="card">
-        <Content text="Testando texto que no futuro deverá ser HTML!!!"/>
-      </div>
+      <RouterProvider router={router}/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
