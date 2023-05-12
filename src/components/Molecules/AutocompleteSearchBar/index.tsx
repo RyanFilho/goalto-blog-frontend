@@ -1,14 +1,10 @@
 import { Autocomplete } from '../Autocomplete';
 import './index.scss';
 
-export interface AutocompleteSearchBarProps {
-  onSearch: (query: string) => void;
-}
-
-export function AutocompleteSearchBar({ onSearch }: AutocompleteSearchBarProps) {
+export function AutocompleteSearchBar() {
   return (
     <div className="autocomplete-search-bar">
-      <Autocomplete onSearch={onSearch} />
+      <Autocomplete/>
     </div>
   );
 };

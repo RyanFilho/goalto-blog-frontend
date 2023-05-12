@@ -1,12 +1,12 @@
 
 import { Meta, StoryObj } from "@storybook/react";
-import { AutocompleteSearchBar, AutocompleteSearchBarProps } from "./index";
+import { AutocompleteSearchBar } from "./index";
 
 export default {
   title: "Components/AutocompleteSearchBar",
   component: AutocompleteSearchBar
-} as Meta<AutocompleteSearchBarProps>
+} as Meta
 
-export const Default: StoryObj<AutocompleteSearchBarProps> = {
+export const Default: StoryObj = {
   
 }
