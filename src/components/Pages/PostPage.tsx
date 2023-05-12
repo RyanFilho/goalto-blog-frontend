@@ -1,6 +1,6 @@
 import { DefaultLayout } from '../Templates/DefaultLayout';
 
-export function HomePage () {
+export function PostPage () {
   return (
     <DefaultLayout>      
       <div className="row">
