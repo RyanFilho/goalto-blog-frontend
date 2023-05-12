@@ -1,5 +1,5 @@
-import data from "./assets/posts.json";
+import { resetData } from "./services/PostService";
 
-export default function LoadDataMock() { 
-  localStorage.setItem('blogPosts', JSON.stringify(data));
+export default function LoadDataMock() {
+  resetData();
 }
