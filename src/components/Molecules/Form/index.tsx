@@ -3,6 +3,8 @@ import { addPost } from "../../../services/PostService";
 import { IPost } from "../../../entities/IPost";
 import { Input } from "../../Atoms/Input";
 import { Snackbar } from "../../Atoms/Snackbar";
+import { TextArea } from "../../Atoms/TextArea";
+import { Button } from "../../Atoms/Button";
 
 export function PostForm () {
   const [showSnackbar, setShowSnackbar] = useState(false);
@@ -11,7 +13,7 @@ export function PostForm () {
   const [author, setAuthor] = useState("");
   
   const handleTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => setTitle(e.target.value);
-  const handleContentChange = (e: React.ChangeEvent<HTMLInputElement>) => setContent(e.target.value);
+  const handleContentChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => setContent(e.target.value);
   const handleAuthorChange = (e: React.ChangeEvent<HTMLInputElement>) => setAuthor(e.target.value);
   
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -43,8 +45,7 @@ export function PostForm () {
           required
         />
         <br/>
-        <Input
-          type="text"
+        <TextArea
           label="Content"
           value={content}
           onChange={handleContentChange}
@@ -59,7 +60,7 @@ export function PostForm () {
           required
         />
         <br/>
-        <button type="submit">Create Post</button>
+        <Button type="submit" >Create</Button>
       </form>
     </div>
   );
