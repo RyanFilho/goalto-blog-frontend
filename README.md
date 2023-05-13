@@ -1,2 +1,2 @@
-# goalto-frontend-test
-ReactJS take-home test
+# goalto-blog-frontend
+ReactJS app
