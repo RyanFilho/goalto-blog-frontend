@@ -1,0 +1,27 @@
+.post {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .author {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    img {
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+  }
+}

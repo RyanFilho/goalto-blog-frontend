@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Input } from '../../Atoms/Input';
-import { getPosts } from '../../../services/PostService';
+import { getAll } from '../../../services/PostService';
 import './index.scss';
 import { IPost } from '../../../entities/IPost';
 
@@ -21,7 +21,7 @@ export function Autocomplete() {
     setQuery(value);
 
     if (value.length > 0) {
-      const storedPosts = getPosts();
+      const storedPosts = getAll();
       
       let filtered = storedPosts
         .filter((post) => post.title.toLowerCase().includes(value.toLowerCase()))

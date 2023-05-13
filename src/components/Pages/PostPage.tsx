@@ -1,11 +1,16 @@
+import { useParams } from "react-router-dom";
+import Post from '../Atoms/Post';
 import { DefaultLayout } from '../Templates/DefaultLayout';
+import { getPost } from "../../services/PostService";
 
 export function PostPage () {
+  let { id } = useParams(); 
+  const post = getPost(Number(id));
   return (
     <DefaultLayout>      
       <div className="row">
         <div className="col">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Gc9tr0ASDf4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        { post ? (<Post post={post} />) : <h1>Post not found!</h1>}
         </div>
       </div>
     </DefaultLayout>
