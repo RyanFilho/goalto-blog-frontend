@@ -51,7 +51,7 @@ export function Autocomplete() {
       {showSuggestions && (
         <ul className="autocomplete-suggestions">
           {filteredSuggestions.map((suggestion, index) => (
-            <li key={index} onClick={() => { navigate("Post/" + suggestion.id); }}>
+            <li key={index} onClick={() => { navigate("/Post/" + suggestion.id); }}>
               {suggestion.title}
             </li>
           ))}

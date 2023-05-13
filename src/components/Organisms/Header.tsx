@@ -9,14 +9,15 @@ export function Header () {
       <Logo />
       <nav className="navigation">
         <ul>
-          <NavLink href="#" label="Home" />
-          <NavLink href="#" label="About" />
-          <NavLink href="#" label="Blog" />
-          <NavLink href="#" label="Contact" />
+          <NavLink link="/" label="Home" />
+          <NavLink link="/" label="About" />
+          <NavLink link="/Post/All" label="Blog" />
+          <NavLink link="/" label="Contact" />
+          <NavLink link="/Post/Create" label="Create a post" />
         </ul>
       </nav>
       <div>
-        <AutocompleteSearchBar onSearch={(value) => console.log("Searching " + value)} />
+        <AutocompleteSearchBar />
       </div>
     </header>
   );

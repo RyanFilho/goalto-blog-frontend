@@ -1,14 +1,15 @@
+import { Link } from 'react-router-dom';
 import './index.scss';
 
 export interface NavLinkProps {
   label: string;
-  href: string;
+  link: string;
 }
 
-export function NavLink({ label, href }: NavLinkProps) {
+export function NavLink({ label, link }: NavLinkProps) {
   return (
     <li>
-      <a href={href}>{label}</a>
+      <Link to={link}>{label}</Link>
     </li>
   );
 };
