@@ -1,7 +1,7 @@
-import { Logo } from '../Atoms/Logo';
-import { NavLink } from '../Atoms/NavLink';
-import { AutocompleteSearchBar } from '../Molecules/AutocompleteSearchBar';
-import "./Header.scss";
+import { Logo } from '../../Atoms/Logo';
+import { NavLink } from '../../Atoms/NavLink';
+import { AutocompleteSearchBar } from '../../Molecules/AutocompleteSearchBar';
+import "./index.scss";
 
 export function Header () {
   return (

@@ -5,7 +5,7 @@ import { getAll } from '../../../services/PostService';
 import './index.scss';
 import { IPost } from '../../../entities/IPost';
 
-export interface IPostSuggestions {
+interface IPostSuggestions {
   id: number, 
   title: string
 }

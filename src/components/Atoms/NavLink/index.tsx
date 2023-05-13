@@ -8,7 +8,7 @@ export interface NavLinkProps {
 
 export function NavLink({ label, link }: NavLinkProps) {
   return (
-    <li>
+    <li className='menu-item'>
       <Link to={link}>{label}</Link>
     </li>
   );

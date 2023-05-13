@@ -1,7 +1,7 @@
 import './index.scss';
 
 export interface InputProps {
-  type: string;
+  type: "text" | "datetime-local" | "number";
   label: string;
   value: string;
   required?: boolean;

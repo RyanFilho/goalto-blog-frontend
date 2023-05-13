@@ -1,11 +1,11 @@
 
 import { Meta, StoryObj } from "@storybook/react";
-import { AutocompleteSearchBar } from "./index";
+import { Header } from ".";
 import { BrowserRouter } from "react-router-dom";
 
 export default {
-  title: "Components/AutocompleteSearchBar",
-  component: AutocompleteSearchBar,
+  title: "Components/Header",
+  component: Header,
   decorators: [
     (Story) => {
       return (

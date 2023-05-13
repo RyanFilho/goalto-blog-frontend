@@ -1,6 +1,6 @@
 import './index.scss';
 
-export interface InputProps {
+export interface ITextAreaProps {
   label: string;
   value: string;
   required?: boolean;
@@ -9,7 +9,7 @@ export interface InputProps {
   onBlur?: () => void;
 }
 
-export function TextArea ({ label, value, required, onChange, onFocus, onBlur }: InputProps) {
+export function TextArea ({ label, value, required, onChange, onFocus, onBlur }: ITextAreaProps) {
   return (
     <div className="textarea-wrapper">
       <label className="textarea-label">{label}</label>
